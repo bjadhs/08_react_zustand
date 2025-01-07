@@ -1,12 +1,13 @@
 // import CounterZustand from './counter-zustand';
 
-import BookRecipe from './BookRecipeExample/BookRecipe';
+import ExpenseTracker from './ExpenseTrackerExample/page';
 
 const App = () => {
   return (
     <div>
-      <BookRecipe />
+      {/* <BookRecipe /> */}
       {/* <CounterZustand /> */}
+      <ExpenseTracker />
     </div>
   );
 };
