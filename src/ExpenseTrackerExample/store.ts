@@ -12,15 +12,10 @@ type Store = {
 
 }
 
-const initialTransactions= [
-    {id: 1, text: 'Flower', amount: -20},
-    {id: 2, text: 'Salary', amount: 300},
-    {id: 3, text: 'Book', amount: -10},
-    {id: 4, text: 'Camera', amount: 150}
-]
 
-const store = create<Store>((set)=>({
-    transaction: initialTransactions,
+
+const useStore = create<Store>((set)=>({
+    transaction: [],
     addTransaction:(t:Transaction)=>{
         set((state)=>({
             transaction: [...state.transaction, t]
@@ -32,4 +27,4 @@ const store = create<Store>((set)=>({
         }))},
 }));
 
-export default store;
+export default useStore;
